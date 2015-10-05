@@ -8,7 +8,7 @@
 
 	<h1>Introduzca el numero de cuenta</h1>
 	
-	<form action="" method="POST">
+	<form action="comprobacion.html.php" method="POST">
 		
 	<div>
 		<label for="entidad">entidad:
