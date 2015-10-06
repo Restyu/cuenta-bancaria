@@ -6,11 +6,6 @@ $numerocontrol = $_POST['numerocontrol'];
 $cuenta = $_POST['cuenta'];
 
 
-	if (strlen($entidad)!=4) return false;
-	if (strlen($oficina)!=4) return false;
-	if (strlen($numerocontrol)!=2) return false;
-	if (strlen($cuenta)!=10) return false;
-
 	function numerodecontrol($entidad, $oficina, $cuenta){
     $dc = "";
     $pesos = array(6, 3, 7, 9, 10, 5, 8, 4, 2, 1);
@@ -42,7 +37,9 @@ $cuenta = $_POST['cuenta'];
  </head>
  <body>
  		<?php echo "numero introducido: " .$entidad ." ". $oficina ." ". $numerocontrol ." ". $cuenta ?>
+		
 		<br>
+		
 		<?php
 
 		$numero_verificacion = numerodecontrol($entidad,$oficina,$cuenta);
